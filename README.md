@@ -2,7 +2,7 @@
 
 [rajaongkir.com](https://rajaongkir.com/)
 
-[![Release](https://img.shields.io/github/v/release/iqmalriy/raja-ongkir-sdk)](https://github.com/iqmalriy/raja-ongkir-sdk/releases)
+[![npm](https://img.shields.io/npm/v/raja-ongkir-sdk)](https://www.npmjs.com/package/raja-ongkir-sdk)
 [![License](https://img.shields.io/github/license/iqmalriy/raja-ongkir-sdk)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/github/package-json/node/iqmalriy/raja-ongkir-sdk)](https://nodejs.org)
 
