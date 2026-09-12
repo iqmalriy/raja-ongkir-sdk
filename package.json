@@ -1,0 +1,65 @@
+{
+  "name": "raja-ongkir-sdk",
+  "version": "0.1.0",
+  "description": "Unofficial TypeScript/Node.js SDK for Raja Ongkir and Komship Delivery (Collaborator) APIs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "example": "tsx example/index.ts",
+    "test": "vitest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "rajaongkir",
+    "raja-ongkir",
+    "komship",
+    "ongkir",
+    "shipping",
+    "delivery",
+    "tracking",
+    "courier",
+    "sdk",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Iqmal Riyadi",
+  "homepage": "https://github.com/iqmalriy/raja-ongkir-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iqmalriy/raja-ongkir-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iqmalriy/raja-ongkir-sdk/issues"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "esbuild@0.28.2": true
+  }
+}
