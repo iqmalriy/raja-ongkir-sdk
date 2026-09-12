@@ -18,7 +18,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "build": "tsup src/index.ts --format cjs,esm && tsc -p tsconfig.build.json --emitDeclarationOnly --declaration --outDir dist",
     "example": "tsx example/index.ts",
     "test": "vitest run",
     "prepublishOnly": "npm run test && npm run build"
@@ -40,7 +40,7 @@
   "homepage": "https://github.com/iqmalriy/raja-ongkir-sdk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iqmalriy/raja-ongkir-sdk.git"
+    "url": "git+https://github.com/iqmalriy/raja-ongkir-sdk.git"
   },
   "bugs": {
     "url": "https://github.com/iqmalriy/raja-ongkir-sdk/issues"
