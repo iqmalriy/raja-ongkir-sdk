@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm && tsc --emitDeclarationOnly --declaration --outDir dist",
     "example": "tsx example/index.ts",
-    "test": "vitest",
+    "test": "vitest run",
     "prepublishOnly": "npm run test && npm run build"
   },
   "keywords": [
